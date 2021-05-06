@@ -9,8 +9,9 @@
         android:roundIcon="@drawable/bmi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultadoImcActivity"></activity>
-        <activity android:name=".imcActivity2"></activity>
+        <activity android:name=".NcdActivity"></activity>
+        <activity android:name=".ResultadoImcActivity" />
+        <activity android:name=".imcActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

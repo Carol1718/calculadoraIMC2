@@ -1,18 +1,23 @@
 package br.senai.sp.jandira.imcapp20
 
+import android.util.Log
+
 fun calcularImc(peso: Double, altura: Double ) = peso / (altura * altura)
-    fun obter_status(imc: Double): String {
+    fun obter_status(imc: Double): List<String> {
+        var resultados = emptyList<String>()
+
         if (imc < 18.5) {
-            return "Abaixo Peso"
+             resultados = listOf("Abaixo do Peso", "Risco de fadiga, stress e ansiedade")
         } else if (imc > 18.5 && imc < 25) {
-            return "Peso ideal"
+            resultados = listOf("Peso Ideal", "Menor riscos de doenças cardíacas e vasculares.")
         } else if (imc >=25 && imc < 30) {
-            return "Acima do peso"
+            resultados = listOf("Acima do Peso", "Fadiga, má circulação, varizes")
         } else if(imc >= 30 && imc < 35) {
-            return "Obesidade Grau I"
+            resultados = listOf("Obesidade Grau I", "Diabete, angina, infarto, aterosclerose")
         } else if(imc >= 35 && imc < 40) {
-            return "Obesidade Grau II"
+            resultados = listOf("Obesidade Grau II", "Apneia do sono, falta de ar")
         } else{
-            return "Obesidade III"
+            resultados = listOf("Obesidade Grau III", "Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC")
         }
+        return resultados
     }
