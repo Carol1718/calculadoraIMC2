@@ -28,6 +28,7 @@ class imcActivity2 : AppCompatActivity() {
                 val peso: Double = edPeso.text.toString().toDouble()
                 val altura: Double = edAltura.text.toString().toDouble()
 
+
                 val intent = Intent(this, ResultadoImcActivity::class.java)
                 intent.putExtra("peso", peso)
                 intent.putExtra("altura", altura)

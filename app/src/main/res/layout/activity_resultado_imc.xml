@@ -69,6 +69,8 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@android:color/holo_blue_light"
                     android:textStyle="bold"/>
+
+
             </LinearLayout>
             </androidx.cardview.widget.CardView>
 
