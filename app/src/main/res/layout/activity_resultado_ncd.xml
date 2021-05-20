@@ -80,7 +80,7 @@
         android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/text_view_dica"
+        android:id="@+id/text_view_dica_ncd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Movimente-se (1) Inicie uma atividade física. Evite escadas rolantes e elevadores e suba a pé."

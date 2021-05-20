@@ -15,8 +15,11 @@ class ResultadoNcdActivity : AppCompatActivity() {
         val idade = intent.getIntExtra("idade", 0)
         val sexo =  intent.getIntExtra("sexo", 0)
         val atividade =  intent.getIntExtra("atividade", 0)
+        val txtDica: TextView = findViewById(R.id.text_view_dica_ncd)
           textViewNcd.text =  nivelAtividade(sexo, atividade).toString()
-        textViewNcd.text =  resultadoFinalNcd(peso, idade, atividade, sexo).toString()
+        textViewNcd.text = String.format ( "%.1f",resultadoFinalNcd(peso, idade, atividade, sexo))
+
+        txtDica.text = getDicaDoDiaNcd()
 
     //  text_view_status.text =
      //   text_view_statuss.text =

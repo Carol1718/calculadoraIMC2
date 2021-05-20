@@ -24,7 +24,7 @@ var ncdResultado = 0.0
     }
 
 fun resultadoFinalNcd(peso: Double, idade: Int, atividade: Int, sexo: Int): Double {
-    var ncdResultado = nivelAtividade(atividade, sexo)
+    var ncdResultado = nivelAtividade(sexo, atividade)
     var resultadoFinal = 0.0
     if (sexo == 1) {
         if (idade > 17 && idade <= 30) {
