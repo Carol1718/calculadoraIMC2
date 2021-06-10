@@ -1,5 +1,7 @@
 package br.senai.sp.jandira.imcapp20
 
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -20,6 +22,9 @@ class ResultadoImcActivity : AppCompatActivity() {
         txtImc.text = String.format("%.1f", calcularImc(peso, altura))
 
         val resultados =  obter_status(calcularImc(peso, altura))
+
+       //Armazenar os dados no preferences
+        val editPreferences = SharedPreferences.Editor()
 
         txtStatus.text = resultados[0]
         txtStatusRisk.text = resultados[1]
