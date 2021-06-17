@@ -41,11 +41,28 @@
     <View
         android:id="@+id/view_wave"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_below="@id/rl_title"
         android:layout_marginTop="-27dp"
         android:background="@drawable/ic_wave" />
 
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="28dp"
+        android:paddingStart="30dp"
+        android:layout_below="@+id/view_wave"/>
+
+    <TextView
+        android:id="@+id/mensagem_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:textSize="18sp"
+        android:text="Faça login para continuar"
+        android:layout_below="@+id/text_login"/>
     <TextView
         android:id="@+id/tv_mensagem_de_erro"
         android:layout_width="wrap_content"
@@ -58,17 +75,17 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/view_wave"
-        android:padding="24dp">
+        android:layout_below="@id/tv_mensagem_de_erro"
+        android:padding="40dp">
 
         <EditText
             android:id="@+id/ed_user"
-            android:layout_width="match_parent"
+            android:layout_width="368dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:background="@drawable/edit_text_login_background"
             android:drawableStart="@drawable/ic_baseline_email_24"
             android:drawablePadding="16dp"
-            android:layout_marginTop="16dp"
             android:hint="Seu email"
             android:inputType="textEmailAddress"
             android:padding="16dp" />
